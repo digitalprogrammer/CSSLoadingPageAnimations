@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container
+{
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(60deg, #ff6596, #60b3f8,#d88cff);
+    background-size: 600% 600%;
+    animation: container 15s infinite linear;
+}
+
+h1{
+    text-align:center;
+    padding-top: 25%;
+    font-family: "Readex Pro", sans-serif;
+    font-size: 4vw;
+    letter-spacing: 6px;
+    color: white;
+}
+
+@keyframes container {
+    0%
+    {
+        background-position: 0 85%;        
+    }   
+    50%
+    {
+        background-position: 100% 20%;        
+    }   
+    100%
+    {
+        background-position: 0 85%;
+    }
+}

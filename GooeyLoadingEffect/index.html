@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Goey Loading</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap" rel="stylesheet">        
+    </head>
+    <body>
+        <div class="container">
+            <div class="circles">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <svg>
+                <defs>
+                    <filter id="gooey">
+                        <feGaussianBlur 
+                            in="SourceGraphic" 
+                            stdDeviation="10" 
+                            result="blur"/>
+                        <feColorMatrix 
+                            in="blur" 
+                            mode="matrix" 
+                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7" 
+                            result="goo"/>
+                        <feBlend 
+                            in="SourceGraphic" 
+                            in2="goo"/>
+
+                    </filter>
+                </defs>
+            </svg>          
+        </div>
+        <div class="wrapper">
+            <h1>Loading...</h1>
+        </div>
+       
+    </body>
+</html>
